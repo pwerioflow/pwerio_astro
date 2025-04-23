@@ -13,7 +13,7 @@ import Stats from '~/components/widgets/Stats.astro';
 import CallToAction from '~/components/widgets/CallToAction.astro';
 
 const metadata = {
-  title: 'AstroWind — Free template for creating websites with Astro + Tailwind CSS',
+  title: 'Pwer Io - O seu departamento digital',
   ignoreTitleTemplate: true,
 };
 ---
@@ -30,7 +30,7 @@ const metadata = {
         icon: 'tabler:download',
       },
     ]}
-    image={{ src: '~/assets/images/hero-image.png', alt: 'AstroWind Hero Image' }}
+    image={{ src: '~/assets/images/hero-image.png', alt: 'Pwer Io Hero Image' }}
   >
     <Fragment slot="title">
       Somos o Departamento Digital para <span class="hidden xl:inline">Pequenas Empresas e Profissionais Liberais</span>
@@ -41,7 +41,7 @@ const metadata = {
       <span class="hidden sm:inline">
         <span class="font-semibold">A PWER IO </span> é uma empresa de prestação de serviços digitais que oferece solucões inovadoras e seguras, combinando inteligência artificial e outras tecnologias avançadas para otimizar e simplificar a gestão digital de diversas empresas.</span
       >
-      <span class="block mb-1 sm:hidden font-bold text-blue-600">AstroWind: Production-ready.</span>
+      <span class="block mb-1 sm:hidden font-bold text-blue-600">PWER IO: Departamento Digital.</span>
 
     </Fragment>
   </Hero>
@@ -97,9 +97,10 @@ const metadata = {
     ]}
   />
 
-  <!-- Content Widget **************** -->
+  <!-- Tech Widget **************** -->
 
   <Content
+      id="tech"
     isReversed
     tagline="Tecnologia e Inteligência"
     title="Transforme seu Negócio com Tecnologia Inteligente"
@@ -135,9 +136,10 @@ const metadata = {
     </Fragment>
   </Content>
 
-  <!-- Content Widget **************** -->
+  <!-- Security Widget **************** -->
 
   <Content
+      id="security"
     isAfterContent
     items={[
       {
@@ -172,9 +174,10 @@ const metadata = {
     </Fragment>
   </Content>
 
-  <!-- Content Widget **************** -->
+  <!-- Agency Widget **************** -->
 
   <Content
+      id="agency"
     isReversed
     isAfterContent
     items={[
@@ -206,9 +209,10 @@ const metadata = {
     </Fragment>
   </Content>
 
-  <!-- Steps Widget ****************** -->
+  <!-- Hire Widget ****************** -->
 
   <Steps
+      id="hire"
     title="Contratar a PWER é simples, rápido e sem complicação."
     items={[
       {
@@ -240,9 +244,10 @@ const metadata = {
     }}
   />
 
-  <!-- Features2 Widget ************** -->
+  <!-- Benefits Widget ************** -->
 
   <Features2
+      id="benefits"
     title="Serviços e Benefícios PWER"
     subtitle="De infraestrutura sólida a estratégias inteligentes, entregamos soluções completas para sua presença online prosperar."
     tagline="Como impulsionamos o seu sucesso digital"
@@ -313,6 +318,7 @@ const metadata = {
   <!-- FAQs Widget ******************* -->
 
   <FAQs
+      id="faq"
     title="Como funciona o processo de contratação da PWER?"
     subtitle="A seguir as perguntas mais frequentes dos nossos clientes. Entre em contato caso queira mais informações. Estamos aqui para dar suporte para sua organização."
     tagline="FAQs"
@@ -365,11 +371,12 @@ const metadata = {
   <!-- CallToAction Widget *********** -->
 
   <CallToAction
+      id="contact"
     actions={[
       {
         variant: 'primary',
         text: 'Entre em Contato',
-        href: 'https://github.com/onwidget/astrowind',
+        href: 'https://wa.me/5511950507175?text=Vim%20do%20site%20da%20PWER%20IO%20e%20gostaria%20de%20conhecer%20mais%20sobre%20os%20serviços',
         target: '_blank',
         icon: 'tabler:brand-whatsapp',
       },
